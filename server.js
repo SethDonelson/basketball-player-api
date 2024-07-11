@@ -48,7 +48,7 @@ app.get('/api/:decade',(req,res) => {
     }
 })
 
-//responds when server is running
-app.listen(PORT, () => {
+//responds when server is running, will use set port or the port the hosting service wants
+app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on ${PORT}!`)
 })
