@@ -37,7 +37,7 @@ const players = {
 
 //looks exactly like an event listener, but instead of click it has a network request then responds with a function    = gives the main page
 app.get('/', (request, response) => {
-    response.sendFile(__dirname + '/index.html')//look in root directory for html file
+    response.sendFile(__dirname + '/main.js')//look in root directory for html file
 })
 
 //make a request through this route, respond with that object    = gives the object on api page
