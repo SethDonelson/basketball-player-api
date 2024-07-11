@@ -1,9 +1,9 @@
 {
-  "name": "crud-2",
+  "name": "basketball-API",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,3 +13,5 @@
     "express": "^4.19.2"
   }
 }
+
+
