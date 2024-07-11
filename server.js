@@ -39,6 +39,7 @@ app.get('/', (request, response) => {
 //make a request through this route, respond with that object    = gives the object on api page
 //grabs from the url whatever follows api/ doesn't matter if I put it as decade or zebra       could add toLowerCase() if using names
 //if playerDecade is a property of players object then respond 
+//use [] to ignore spaces, can also use .
 app.get('/api/:decade',(req,res) => {
     const playerDecade = req.params.decade  
     if(players[playerDecade] ){ 
